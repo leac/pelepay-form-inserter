@@ -23,13 +23,17 @@
                         },
                         {
                             type: 'textbox',
+                            name: 'payment_for',
+                            label: editor.getLang('pelepay_tc_button.payment_for')
+                        },                        {
+                            type: 'textbox',
                             name: 'payments',
                             label: editor.getLang('pelepay_tc_button.payments_text')
                         }
                     ],
                     onsubmit: function (e) {
                         /* enclose string in double quotes, so attribute values can be enclosed in single quotes, so that double quotes can be used in values*/
-                        editor.insertContent("[pelepay_form first_option='" + e.data.title + "' price_list='" + e.data.price_list + "' price_text='" + e.data.price_text + "'" + " payments='" + e.data.payments + "' ]");
+                        editor.insertContent("[pelepay_form first_option='" + e.data.title + "' price_list='" + e.data.price_list + "' price_text='" + e.data.price_text + "' payment_for='" + e.data.payment_for + "' payments='" + e.data.payments + "' ]");
                         /* old code, enclosed in single quotes:
                          * editor.insertContent('[pelepay_form first_option="' + e.data.title + '" price_list="' + e.data.price_list + '" price_text="' + e.data.price_text + '"'+ ' payments="' + e.data.payments + '" ]');*/
                     }

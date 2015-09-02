@@ -85,27 +85,6 @@
 	}
 
 	/**
-	 * Register the JavaScript for the dashboard.
-	 *
-	 * @since    1.0.0
-	 */
-	public function enqueue_scripts() {
-
-	    /**
-	     * This function is provided for demonstration purposes only.
-	     *
-	     * An instance of this class should be passed to the run() function
-	     * defined in Pelepay_Form_Inserter_Loader as all of the hooks are defined
-	     * in that particular class.
-	     *
-	     * The Pelepay_Form_Inserter_Loader will then create the relationship
-	     * between the defined hooks and the functions defined in this
-	     * class.
-	     */
-	    wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/pelepay-form-inserter-admin.js', array ( 'jquery' ), $this->version, false );
-	}
-
-	/**
 	 * Adds 2 filters:
 	 * One to specify the path to the script with our plugin for TinyMC.
 	 * The second, is used to add a button in the editor

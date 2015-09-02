@@ -14,7 +14,8 @@
 	    'first_option_text' => __( 'First option text', $plugin->get_plugin_name() ),
 	    'price_list' => __( 'Comma separated price list', $plugin->get_plugin_name() ),
 	    'price_text' => __( 'Comma separated price text list', $plugin->get_plugin_name() ),
-	    'payments_text' => __( 'Max number of payments', $plugin->get_plugin_name() )
+	    'payment_for' => __( 'Payment for...', $plugin->get_plugin_name() ),
+            'payments_text' => __( 'Max number of payments', $plugin->get_plugin_name() )
 	);
 
 	$locale = _WP_Editors::$mce_locale;
