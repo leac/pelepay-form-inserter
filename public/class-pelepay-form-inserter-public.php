@@ -112,9 +112,10 @@ class Pelepay_Form_Inserter_Public {
      * @return the HTML to insert instead of shortcode
      */
     function insert_pelepay_form($atts) {
-        $first_option_text = $atts['first_option'];
-        $price_list = explode(',', $atts['price_list']);
-        $price_text = explode(',', $atts['price_text']);
+        $ret ='';
+        $first_option_text = htmlspecialchars($atts['first_option']);
+        $price_list = explode(',', htmlspecialchars($atts['price_list']));
+        $price_text = explode(',', htmlspecialchars($atts['price_text']));
         $price_len = count($price_list);
         $default_payment_for = '_chart_shopp';
         /* create dropdown list with options from attributes */
@@ -133,7 +134,7 @@ class Pelepay_Form_Inserter_Public {
         }
         $ret .='" /></p>';
         /* save number of payments */
-        $payments = empty($atts['payments']) ? 1 : $atts['payments'];
+        $payments = empty($atts['payments']) ? 1 : htmlspecialchars($atts['payments']);
         /* create the pelepay form with hidden fields, and a button which a function is attached to its click event */
         $ret .= '<form action="https://www.pelepay.co.il/pay/paypage.aspx" method="post" name="pelepayform">'
                 . '<input name="business" type="hidden" value="kamoha.or@gmail.com" />'
