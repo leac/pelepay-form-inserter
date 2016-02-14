@@ -141,7 +141,7 @@ class Pelepay_Form_Inserter_Public {
                 . '<input name="amount" type="hidden" value="" />'
                 . '<input name="orderid" type="hidden" value="" />'
                 . '<input name="description" type="hidden" value="' . $payment_for . '" />'
-                . '<input id="pelepay_submit" alt="Make payments with pelepay" name="pelepay_submit" src="https://www.pelepay.co.il/images/banners/respect_pp_8c.gif" type="image" />'
+                . '<input id="pelepay_submit" alt="Make payments with pelepay" name="pelepay_submit" src="'.plugin_dir_url(__FILE__) .'images/pelepay.png" type="image" />'
                 . '<input type="hidden" name="max_payments" value="' . $payments . '">'
                 . '</form>';
         return $ret;
