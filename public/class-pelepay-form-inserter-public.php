@@ -113,14 +113,13 @@ class Pelepay_Form_Inserter_Public {
      */
     function insert_pelepay_form($atts) {
         $ret ='';
-        $first_option_text = htmlspecialchars($atts['first_option']);
         $price_list = explode(',', htmlspecialchars($atts['price_list']));
         $price_text = explode(',', htmlspecialchars($atts['price_text']));
         $price_len = count($price_list);
         $default_payment_for = '_chart_shopp';
         /* create dropdown list with options from attributes */
         $ret .= '<p><select id="amount">' .
-                '<option value="0">' . $first_option_text . '</option>';
+                '<option value="0">' . __( 'Click here to choose sum', $this->plugin_name ) . '</option>';
         for ($i = 0; $i < $price_len; $i ++) {
             $ret .='<option value="' . trim($price_list[$i]) . '">' . trim($price_text[$i]) . '</option>';
         }

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Pelepay Form Inserter v1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-09-02 01:32:19+0000\n"
+"PO-Revision-Date: 2016-03-21 01:59:07+0000\n"
 "Last-Translator: leac <leac@mapa.ort.org.il>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,27 +20,26 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
+#: admin/class-pelepay-form-inserter-admin.php:155
 #: admin/pelepay_tinymce_btn_lang.php:13
 #@ pelepay-form-inserter
 msgid "Add Pelepay form"
 msgstr "הוסף טופס תשלום"
 
+#: admin/class-pelepay-form-inserter-admin.php:182
 #: admin/pelepay_tinymce_btn_lang.php:14
-#@ pelepay-form-inserter
-msgid "First option text"
-msgstr "כיתוב כשהרשימה סגורה"
-
-#: admin/pelepay_tinymce_btn_lang.php:15
 #@ pelepay-form-inserter
 msgid "Comma separated price list"
 msgstr "רשימת מחירים, מופרדת ע''י פסיקים (למשל 250,300,350)"
 
-#: admin/pelepay_tinymce_btn_lang.php:16
+#: admin/class-pelepay-form-inserter-admin.php:187
+#: admin/pelepay_tinymce_btn_lang.php:15
 #@ pelepay-form-inserter
 msgid "Comma separated price text list"
 msgstr "רשימת טקסטים, מופרדת ע''י פסיקים, הנלווים לכל מחיר (למשל מחיר לחבר,מחיר לשאינו חבר,מחיר לחייזר)"
 
-#: admin/pelepay_tinymce_btn_lang.php:18
+#: admin/class-pelepay-form-inserter-admin.php:197
+#: admin/pelepay_tinymce_btn_lang.php:17
 #@ pelepay-form-inserter
 msgid "Max number of payments"
 msgstr "מספר תשלומים מקסימלי"
@@ -81,8 +80,15 @@ msgstr ""
 msgid "1.0.0"
 msgstr ""
 
-#: admin/pelepay_tinymce_btn_lang.php:17
+#: admin/class-pelepay-form-inserter-admin.php:192
+#: admin/pelepay_tinymce_btn_lang.php:16
+#: public/class-pelepay-form-inserter-public.php:129
 #@ pelepay-form-inserter
 msgid "Payment for..."
 msgstr "תרומה בעבור"
+
+#: public/class-pelepay-form-inserter-public.php:122
+#@ pelepay-form-inserter
+msgid "Click here to choose sum"
+msgstr "לחצו כאן לבחירת הסכום"
 

@@ -155,7 +155,7 @@ class Pelepay_Form_Inserter {
 		$this->loader->add_action( 'admin_head', $plugin_admin, 'add_my_tc_button' );
 		$this->loader->add_action( 'plugins_loaded', $plugin_admin, 'set_paths' );
 		$this->loader->add_filter( 'mce_external_languages', $plugin_admin, 'add_my_tc_button_lang' );
-
+		$this->loader->add_action( 'register_shortcode_ui', $plugin_admin, 'shortcode_ui_pelepay' );
 	}
 
 	/**
