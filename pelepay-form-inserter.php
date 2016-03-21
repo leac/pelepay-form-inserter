@@ -11,7 +11,7 @@
  * Plugin Name:       Pelepay Form Inserter
  * Plugin URI:        http://leketshibolim.ort.org.il/pelepay-form-inserter-uri/
  * Description:       Inserts Pelepay form in a post.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Lea Cohen
  * Author URI:        http://leketshibolim.ort.org.il/
  * License:           GPL-2.0+
