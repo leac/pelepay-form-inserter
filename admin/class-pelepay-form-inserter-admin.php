@@ -187,11 +187,13 @@ class Pelepay_Form_Inserter_Admin {
                     'label' => esc_html__( 'Comma separated price text list', $this->plugin_name ),
                     'attr' => 'price_text',
                     'type' => 'text',
+                    'encode' => true,
                 ),
                 array (
                     'label' => esc_html__( 'Payment for...', $this->plugin_name ),
                     'attr' => 'payment_for',
                     'type' => 'text',
+                    'encode' => true,
                 ),
                 array (
                     'label' => esc_html__( 'Max number of payments', $this->plugin_name ),

@@ -114,7 +114,7 @@ class Pelepay_Form_Inserter_Public {
     function insert_pelepay_form($atts) {
         $ret ='';
         $price_list = explode(',', htmlspecialchars($atts['price_list']));
-        $price_text = explode(',', htmlspecialchars($atts['price_text']));
+        $price_text = explode(',', htmlspecialchars(rawurldecode($atts['price_text'])));
         $price_len = count($price_list);
         $default_payment_for = '_chart_shopp';
         /* create dropdown list with options from attributes */
@@ -125,7 +125,7 @@ class Pelepay_Form_Inserter_Public {
         }
         $ret .= '</select></p>';
         /* save payment's goal and show them in a text box */
-        $payment_for = empty($atts['payment_for']) ? $default_payment_for : htmlspecialchars($atts['payment_for']);
+        $payment_for = empty($atts['payment_for']) ? $default_payment_for : htmlspecialchars(rawurldecode ($atts['payment_for']));
         $ret .= '<p><label for="description_text">'.__( 'Payment for...', $this->plugin_name ).'</label><br>';
         $ret .= '<input name="description_text" id="description_text" type="text" value="';
         if ($payment_for != $default_payment_for) {
