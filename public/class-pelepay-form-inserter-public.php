@@ -112,21 +112,24 @@ class Pelepay_Form_Inserter_Public {
      * @return the HTML to insert instead of shortcode
      */
     function insert_pelepay_form($atts) {
-        $ret ='';
+        $ret = '';
+        $first_option_text = htmlspecialchars($atts['first_option']);
         $price_list = explode(',', htmlspecialchars($atts['price_list']));
         $price_text = explode(',', htmlspecialchars(rawurldecode($atts['price_text'])));
         $price_len = count($price_list);
         $default_payment_for = '_chart_shopp';
         /* create dropdown list with options from attributes */
         $ret .= '<p><select id="amount">' .
-                '<option value="0">' . __( 'Click here to choose sum', $this->plugin_name ) . '</option>';
+                '<option value="0">';
+        $ret .= $first_option_text != null ? $first_option_text : __('Click here to choose sum', $this->plugin_name);
+        $ret.= '</option>';
         for ($i = 0; $i < $price_len; $i ++) {
             $ret .='<option value="' . trim($price_list[$i]) . '">' . trim($price_text[$i]) . '</option>';
         }
         $ret .= '</select></p>';
         /* save payment's goal and show them in a text box */
-        $payment_for = empty($atts['payment_for']) ? $default_payment_for : htmlspecialchars(rawurldecode ($atts['payment_for']));
-        $ret .= '<p><label for="description_text">'.__( 'Payment for...', $this->plugin_name ).'</label><br>';
+        $payment_for = empty($atts['payment_for']) ? $default_payment_for : htmlspecialchars(rawurldecode($atts['payment_for']));
+        $ret .= '<p><label for="description_text">' . __('Payment for...', $this->plugin_name) . '</label><br>';
         $ret .= '<input name="description_text" id="description_text" type="text" value="';
         if ($payment_for != $default_payment_for) {
             $ret .= $payment_for;
@@ -140,7 +143,7 @@ class Pelepay_Form_Inserter_Public {
                 . '<input name="amount" type="hidden" value="" />'
                 . '<input name="orderid" type="hidden" value="" />'
                 . '<input name="description" type="hidden" value="' . $payment_for . '" />'
-                . '<input id="pelepay_submit" alt="Make payments with pelepay" name="pelepay_submit" src="'.plugin_dir_url(__FILE__) .'images/pelepay.png" type="image" />'
+                . '<input id="pelepay_submit" alt="Make payments with pelepay" name="pelepay_submit" src="' . plugin_dir_url(__FILE__) . 'images/pelepay.png" type="image" />'
                 . '<input type="hidden" name="max_payments" value="' . $payments . '">'
                 . '</form>';
         return $ret;
