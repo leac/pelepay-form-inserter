@@ -240,8 +240,10 @@ class Pelepay_Form_Inserter_Admin {
         while ( $principles_pages->have_posts() ) : $principles_pages->the_post();
             $post_id = get_the_ID();
             $post_name = htmlspecialchars_decode( get_the_title() );
+            // if title is empty, show the first 3 words of the body or excerpt
+            $text_title = empty( $post_name ) ? $this->shorten_excerpt( get_the_excerpt(), 4 ) : $post_name;
             $list[] = array(
-                'text' => $post_name,
+                'text' => $text_title,
                 'value' => $post_id
             );
 
@@ -300,6 +302,21 @@ class Pelepay_Form_Inserter_Admin {
             </script>
             <?php
         }
+    }
+
+    /**
+     * Shortten the excerpt to the given amount of words
+     * @param string $excerpt - the excerpt
+     * @param type $length - number of words from excerpt
+     * @return shorttened excerpt
+     */
+    private function shorten_excerpt( $excerpt, $length ) {
+        $ret = $excerpt;
+        $excerpt_arr = explode( ' ', $excerpt, $length ); // If limit is set and positive, the returned array will contain a maximum of limit elements with the last element containing the rest of string. 
+        // remove the last element
+        array_pop( $excerpt_arr );
+        $ret = implode( ' ', $excerpt_arr );
+        return $ret;
     }
 
 }
