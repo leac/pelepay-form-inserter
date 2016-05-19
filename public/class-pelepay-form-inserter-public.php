@@ -146,7 +146,7 @@ class Pelepay_Form_Inserter_Public {
         $price_list = explode( ',', htmlspecialchars( $atts['price_list'] ) );
         $price_text = explode( ',', htmlspecialchars( rawurldecode( $atts['price_text'] ) ) );
         $price_len = count( $price_list );
-        $form_action = ($atts['principles_page'] != NULL && $atts['principles_page'] != 0) ? get_permalink( $atts['principles_page'] ) : $this->basic_form_action;
+        $form_action = (isset($atts['principles_page'])  && $atts['principles_page'] != 0) ? get_permalink( $atts['principles_page'] ) : $this->basic_form_action;
         $default_payment_for = '_chart_shopp';
         /* create dropdown list with options from attributes */
         $form_elements .= '<p>';
