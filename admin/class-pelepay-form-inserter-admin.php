@@ -159,7 +159,7 @@ class Pelepay_Form_Inserter_Admin {
          * @param string $shortcode_tag
          * @param array $ui_args
          */
-        shortcode_ui_register_for_shortcode( 'kamoha_pelepay_form', array(
+        shortcode_ui_register_for_shortcode( 'pelepay_form', array(
             /*
              * How the shortcode should be labeled in the UI. Required argument.
              */
@@ -189,6 +189,11 @@ class Pelepay_Form_Inserter_Admin {
              * Depending on 'type', additional arguments may be available.
              */
             'attrs' => array(
+                array(
+                    'label' => esc_html__( 'First option text', $this->plugin_name ),
+                    'attr' => 'first_option',
+                    'type' => 'text',
+                ),
                 array(
                     'label' => esc_html__( 'Comma separated price list', $this->plugin_name ),
                     'attr' => 'price_list',

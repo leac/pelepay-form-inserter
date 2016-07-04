@@ -127,7 +127,6 @@ class Pelepay_Form_Inserter_Public {
      * Create shortcode for pelepay form
      */
     function register_shortcodes() {
-        add_shortcode( 'kamoha_pelepay_form', array(&$this, 'insert_pelepay_form') );
         add_shortcode( 'pelepay_form', array(&$this, 'insert_pelepay_form') );
     }
 

@@ -12,6 +12,7 @@ function pelepay_tc_button_translation() {
     $plugin = new Pelepay_form_inserter();
     $strings = array(
         'button_label' => __( 'Add Pelepay form', $plugin->get_plugin_name() ),
+        'first_option_text' => __( 'First option text', $plugin->get_plugin_name() ),
         'price_list' => __( 'Comma separated price list', $plugin->get_plugin_name() ),
         'price_text' => __( 'Comma separated price text list', $plugin->get_plugin_name() ),
         'payment_for' => __( 'Payment for...', $plugin->get_plugin_name() ),
