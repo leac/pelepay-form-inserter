@@ -22,12 +22,12 @@ get_header();
                     <?php echo apply_filters( 'pelepay_add_form_after_principles', '' ) ?>
                     <?php
                     wp_link_pages( array(
-                        'before' => '<div class="page-links">' . __( 'Pages:', 'kamoha' ),
+                        'before' => '<div class="page-links">' . __( 'Pages:', 'pelepay-form-inserter' ),
                         'after' => '</div>',
                     ) );
                     ?>
                 </div><!-- .entry-content -->
-                <?php edit_post_link( __( 'Edit', 'kamoha' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+                <?php edit_post_link( __( 'Edit', 'pelepay-form-inserter' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
             </article><!-- #post-## -->
 
 

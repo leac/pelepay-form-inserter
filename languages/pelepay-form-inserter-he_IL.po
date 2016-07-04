@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pelepay Form Inserter v1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-05 00:40+0300\n"
-"PO-Revision-Date: 2016-07-05 00:45+0300\n"
+"POT-Creation-Date: 2016-07-05 01:08+0300\n"
+"PO-Revision-Date: 2016-07-05 01:08+0300\n"
 "Last-Translator: leac <leac@mapa.ort.org.il>\n"
 "Language-Team: \n"
 "Language: he_IL\n"
@@ -19,57 +19,57 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/class-pelepay-form-inserter-admin.php:234
-#: admin/pelepay_tinymce_btn_lang.php:19
+#: admin/class-pelepay-form-inserter-admin.php:239
+#: admin/pelepay_tinymce_btn_lang.php:20
 msgid "Choose page to redirect"
 msgstr "בחר עמוד עקרונות"
 
 # @ pelepay-form-inserter
-#: admin/pelepay_tinymce_btn_lang.php:13
+#: admin/pelepay_tinymce_btn_lang.php:14
 msgid "Add Pelepay form"
 msgstr "הוסף טופס תשלום"
 
-#: admin/pelepay_tinymce_btn_lang.php:14
+#: admin/pelepay_tinymce_btn_lang.php:15
 msgid "First option text"
 msgstr "מה שיהיה כתוב כשהקומבו סגור"
 
 # @ pelepay-form-inserter
-#: admin/pelepay_tinymce_btn_lang.php:15
+#: admin/pelepay_tinymce_btn_lang.php:16
 msgid "Comma separated price list"
 msgstr "רשימת מחירים, מופרדת ע''י פסיקים (למשל 250,300,350)"
 
 # @ pelepay-form-inserter
-#: admin/pelepay_tinymce_btn_lang.php:16
+#: admin/pelepay_tinymce_btn_lang.php:17
 msgid "Comma separated price text list"
 msgstr ""
 "רשימת טקסטים, מופרדת ע''י פסיקים, הנלווים לכל מחיר (למשל מחיר לחבר,מחיר "
 "לשאינו חבר,מחיר לחייזר)"
 
 # @ pelepay-form-inserter
-#: admin/pelepay_tinymce_btn_lang.php:17
-#: public/class-pelepay-form-inserter-public.php:165
+#: admin/pelepay_tinymce_btn_lang.php:18
+#: public/class-pelepay-form-inserter-public.php:164
 msgid "Payment for..."
 msgstr "תרומה בעבור"
 
 # @ pelepay-form-inserter
-#: admin/pelepay_tinymce_btn_lang.php:18
+#: admin/pelepay_tinymce_btn_lang.php:19
 msgid "Max number of payments"
 msgstr "מספר תשלומים מקסימלי"
 
-#: public/class-pelepay-form-inserter-public.php:153
+#: public/class-pelepay-form-inserter-public.php:152
 msgid "No amount chosen"
 msgstr "לא נבחר סכום לתשלום"
 
 # @ pelepay-form-inserter
-#: public/class-pelepay-form-inserter-public.php:156
+#: public/class-pelepay-form-inserter-public.php:155
 msgid "Click here to choose sum"
 msgstr "לחצו כאן לבחירת הסכום"
 
-#: public/class-pelepay-form-inserter-public.php:202
+#: public/class-pelepay-form-inserter-public.php:201
 msgid "I read the principles"
 msgstr "קראתי את העקרונות ואפעל על פיהם"
 
-#: public/class-pelepay-form-inserter-public.php:205
+#: public/class-pelepay-form-inserter-public.php:204
 msgid "Go on to pay"
 msgstr "המשך לתשלום"
 
