@@ -184,7 +184,7 @@ class Pelepay_Form_Inserter_Public {
     private function create_pelepay_form( $payment_for, $payments, $amount = "", $form_action ) {
         $ret = '<form action=' . $form_action . ' method="post" name="pelepayform">'
                 . $this->form_elemenst_placeholder
-                . '<input name="business" type="hidden" value="kamoha.or@gmail.com" />'
+                . '<input name="business" type="hidden" value="haim@kamoha.org.il" />'
                 . '<input name="amount" type="hidden" value=' . $amount . ' />'
                 . '<input name="orderid" type="hidden" value="" />'
                 . '<input name="description" type="hidden" value="' . $payment_for . '" />'
